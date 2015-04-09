@@ -383,7 +383,7 @@ public class FormulaElement implements Serializable {
 					return arduinoAnalog.getAnalogArduinoPin(left.toString());
 				}
 				break;
-		case LIST_ITEM:
+			case LIST_ITEM:
 				return interpretFunctionListItem(left, sprite);
 			case CONTAINS:
 				return interpretFunctionContains(right, sprite);

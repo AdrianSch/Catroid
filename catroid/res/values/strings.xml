@@ -578,6 +578,7 @@
     <string name="arduino_pin_value_low">low</string>
     <!--  -->
 
+
     <!-- Lego Mindstorms Strings -->
     <string name="nxt_brick_motor_move">Set NXT motor</string>
     <string name="nxt_motor_speed_to">to</string>
