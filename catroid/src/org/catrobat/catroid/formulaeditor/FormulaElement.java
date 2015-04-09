@@ -25,8 +25,12 @@ package org.catrobat.catroid.formulaeditor;
 import android.util.Log;
 
 import org.catrobat.catroid.ProjectManager;
+import org.catrobat.catroid.bluetooth.base.BluetoothDevice;
+import org.catrobat.catroid.common.CatroidService;
+import org.catrobat.catroid.common.ServiceProvider;
 import org.catrobat.catroid.content.Sprite;
 import org.catrobat.catroid.content.bricks.Brick;
+import org.catrobat.catroid.devices.arduino.Arduino;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -367,7 +371,19 @@ public class FormulaElement implements Serializable {
 				return interpretFunctionLength(left, sprite);
 			case JOIN:
 				return interpretFunctionJoin(sprite);
-			case LIST_ITEM:
+			case ARDUINODIGITAL:
+				Arduino arduinoDigital = ServiceProvider.getService(CatroidService.BLUETOOTH_DEVICE_SERVICE).getDevice(BluetoothDevice.ARDUINO);
+				if (arduinoDigital != null) {
+					return arduinoDigital.getDigitalArduinoPin(left.toString());
+				}
+				break;
+			case ARDUINOANALOG:
+				Arduino arduinoAnalog = ServiceProvider.getService(CatroidService.BLUETOOTH_DEVICE_SERVICE).getDevice(BluetoothDevice.ARDUINO);
+				if (arduinoAnalog != null) {
+					return arduinoAnalog.getAnalogArduinoPin(left.toString());
+				}
+				break;
+		case LIST_ITEM:
 				return interpretFunctionListItem(left, sprite);
 			case CONTAINS:
 				return interpretFunctionContains(right, sprite);
@@ -772,6 +788,10 @@ public class FormulaElement implements Serializable {
 	public void setLeftChild(FormulaElement leftChild) {
 		this.leftChild = leftChild;
 		this.leftChild.parent = this;
+	}
+
+	public FormulaElement getLeftChild() {
+		return leftChild;
 	}
 
 	public void replaceElement(FormulaElement current) {

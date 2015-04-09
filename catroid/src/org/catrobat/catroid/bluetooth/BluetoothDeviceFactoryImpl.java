@@ -28,6 +28,7 @@ import org.catrobat.catroid.bluetooth.base.BluetoothDevice;
 import org.catrobat.catroid.bluetooth.base.BluetoothDeviceFactory;
 import org.catrobat.catroid.devices.arduino.phiro.PhiroImpl;
 import org.catrobat.catroid.devices.mindstorms.nxt.LegoNXTImpl;
+import org.catrobat.catroid.devices.arduino.ArduinoImpl;
 
 public class BluetoothDeviceFactoryImpl implements BluetoothDeviceFactory {
 
@@ -41,6 +42,13 @@ public class BluetoothDeviceFactoryImpl implements BluetoothDeviceFactory {
 		if (service == BluetoothDevice.PHIRO) {
 			return new PhiroImpl();
 		}
+//        if (service == BTDeviceService.ALBERT) {
+//            return new Albert();
+//        }
+
+        if (service == BluetoothDevice.ARDUINO) {
+            return new ArduinoImpl(applicationContext);
+        }
 
 		return null; // may throw exception
 	}

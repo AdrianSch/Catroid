@@ -42,6 +42,8 @@ public class XmlHeader implements Serializable {
 	@XStreamAlias("screenMode")
 	public ScreenModes screenMode = ScreenModes.STRETCH;
 
+
+	private boolean isArudinoProject = false;
 	private float catrobatLanguageVersion;
 
 	private boolean isPhiroProProject = false;
@@ -190,5 +192,13 @@ public class XmlHeader implements Serializable {
 
 	public void setPhiroProProject(boolean isPhiroProProject) {
 		this.isPhiroProProject = isPhiroProProject;
+	}
+
+	boolean isArduinoProject() {
+		return isArudinoProject;
+	}
+
+	void setArduinoProject(boolean isArudinoProject) {
+		this.isArudinoProject = isArudinoProject;
 	}
 }
