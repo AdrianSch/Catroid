@@ -71,7 +71,6 @@ public class ArduinoSendBrick extends BrickBaseType implements OnItemSelectedLis
 	@Override
 	public Brick copyBrickForSprite(Sprite sprite) {
 		ArduinoSendBrick copyBrick = (ArduinoSendBrick) clone();
-		//copyBrick.sprite = sprite;
 		return copyBrick;
 	}
 
@@ -104,11 +103,11 @@ public class ArduinoSendBrick extends BrickBaseType implements OnItemSelectedLis
 
 	}
 
+
 	@Override
 	public Brick clone() {
 		return new ArduinoSendBrick(valueSpinnerPosition, pinSpinnerPosition, pinValue);
 	}
-
 	@Override
 	public View getView(Context context, int brickId, BaseAdapter baseAdapter) {
 		if (animationState) {

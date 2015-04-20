@@ -44,10 +44,7 @@ public class ArduinoIrCommandAction extends TemporalAction {
 	@Override
 	protected void update(float percent) {
 		Arduino arduino = ServiceProvider.getService(CatroidService.BLUETOOTH_DEVICE_SERVICE).getDevice(BluetoothDevice.ARDUINO);
-
-		if(arduino != null) {
-			arduino.sendArduinoMessage(commandToSend);
-		}
+		if(arduino != null) { arduino.sendArduinoMessage(commandToSend); }
 	}
 
 	public void setCommand(String command) {
