@@ -559,9 +559,9 @@
     <string name="brick_arduino_ir_default_value">"Add command here"</string>
     <string name="dialog_edit_arduino_ir_text">Send command to Arduino</string>
     <string name="dialog_edit_arduino_ir_title">Enter IR command</string>
-     <!--  -->
+    <!--  -->
 
-    
+
     <!-- Arduino Strings -->
     <string name="digital_arduino_pin_1">1</string> <!-- serial Tx -->
     <string name="digital_arduino_pin_3">3</string> <!-- PWM -->
