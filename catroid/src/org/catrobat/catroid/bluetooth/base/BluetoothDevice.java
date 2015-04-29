@@ -25,6 +25,7 @@ package org.catrobat.catroid.bluetooth.base;
 import org.catrobat.catroid.devices.arduino.phiro.Phiro;
 import org.catrobat.catroid.devices.mindstorms.nxt.LegoNXT;
 import org.catrobat.catroid.devices.arduino.Arduino;
+
 import org.catrobat.catroid.stage.StageResourceInterface;
 
 import java.util.UUID;

@@ -22,9 +22,7 @@
  */
 package org.catrobat.catroid.devices.arduino;
 
-
 import org.catrobat.catroid.bluetooth.base.BluetoothDevice;
-import org.catrobat.catroid.common.CatroidService;
 public interface Arduino extends BluetoothDevice {
 
 	public void setDigitalArduinoPin(String digitalPinNumber, char pinValue);
