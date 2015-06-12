@@ -930,6 +930,12 @@ public class FormulaElement implements Serializable {
 				case PHIRO_BOTTOM_RIGHT:
 					resources |= Brick.BLUETOOTH_PHIRO;
 					break;
+
+				case ARDUINOANALOG:
+				case ARDUINODIGITAL:
+					resources |= Brick.BLUETOOTH_SENSORS_ARDUINO;
+					break;
+
 				default:
 
 			}

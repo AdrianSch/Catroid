@@ -36,6 +36,7 @@ import com.actionbarsherlock.view.MenuInflater;
 
 import org.catrobat.catroid.BuildConfig;
 import org.catrobat.catroid.R;
+import org.catrobat.catroid.content.Setting;
 import org.catrobat.catroid.ui.BottomBar;
 import org.catrobat.catroid.ui.SettingsActivity;
 import org.catrobat.catroid.ui.ViewSwitchLock;
