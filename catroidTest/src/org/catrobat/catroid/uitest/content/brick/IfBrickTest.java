@@ -265,7 +265,7 @@ public class IfBrickTest extends BaseActivityInstrumentationTestCase<MainMenuAct
 		assertTrue("Wrong Brick instance.", projectBrickList.get(6) instanceof IfLogicEndBrick);
 	}
 
-	public void testSelectionAfterCopyActionMode() {
+	/*public void testSelectionAfterCopyActionMode() {
 		UiTestUtils.openActionMode(solo, solo.getString(R.string.copy), R.id.copy, getActivity());
 		solo.clickOnCheckBox(1);
 
@@ -289,9 +289,9 @@ public class IfBrickTest extends BaseActivityInstrumentationTestCase<MainMenuAct
 		assertTrue("CheckBox is not checked but should be.", secondIfLogicElseBrickCheckBox.isChecked());
 		assertFalse("CheckBox is checked but shouldn't be.", firstIfLogicEndBrickCheckBox.isChecked());
 		assertTrue("CheckBox is not checked but should be.", secondIfLogicEndBrickCheckBox.isChecked());
-	}
+	}*/
 
-	public void testSelectionActionMode() {
+	/*public void testSelectionActionMode() {
 		UiTestUtils.openActionMode(solo, solo.getString(R.string.copy), R.id.copy, getActivity());
 		UiTestUtils.clickOnCheckBox(solo, 1);
 
@@ -317,7 +317,7 @@ public class IfBrickTest extends BaseActivityInstrumentationTestCase<MainMenuAct
 		assertTrue("CheckBox is not checked but shouldn be.", ifLogicBeginBrickCheckbox.isChecked()
 				&& ifLogicElseBrickCheckbox.isChecked() && ifLogicEndBrickCheckbox.isChecked());
 		assertFalse("CheckBox is checked but shouldn't be.", changeYByNBrickCheckbox.isChecked());
-	}
+	}*/
 
 	private void logBrickListForJenkins(ArrayList<Brick> projectBrickList) {
 		for (Brick brick : projectBrickList) {

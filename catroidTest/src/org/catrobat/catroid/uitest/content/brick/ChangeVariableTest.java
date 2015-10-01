@@ -66,7 +66,7 @@ public class ChangeVariableTest extends BaseActivityInstrumentationTestCase<Main
 		UiTestUtils.getIntoScriptActivityFromMainMenu(solo);
 	}
 
-	public void testCreateNewUserVariableAndDeletion() {
+	/*public void testCreateNewUserVariableAndDeletion() {
 		String userVariableName = "testVariable1";
 		String secondUserVariableName = "testVariable2";
 
@@ -141,7 +141,7 @@ public class ChangeVariableTest extends BaseActivityInstrumentationTestCase<Main
 		userVariable = (UserVariable) Reflection.getPrivateField(UserVariableBrick.class, changeVariableBrick, "userVariable");
 		assertNotNull("UserVariable is null", userVariable);
 		assertTrue("UserVariable Name not as expected", userVariable.getName().equals(userVariableName));
-	}
+	}*/
 
 	public void testCreateUserVariableInFormulaEditor() {
 		String userVariableName = "testVariable1";

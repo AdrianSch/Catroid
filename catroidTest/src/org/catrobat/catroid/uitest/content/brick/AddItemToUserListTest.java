@@ -63,7 +63,7 @@ public class AddItemToUserListTest extends BaseActivityInstrumentationTestCase<M
 		UiTestUtils.getIntoScriptActivityFromMainMenu(solo);
 	}
 
-	public void testCreateNewUserListAndDeletion() {
+	/*public void testCreateNewUserListAndDeletion() {
 		String userListName = "testList1";
 		String secondUserListName = "testList2";
 
@@ -138,7 +138,7 @@ public class AddItemToUserListTest extends BaseActivityInstrumentationTestCase<M
 		userList = (UserList) Reflection.getPrivateField(UserListBrick.class, addItemToUserListBrick, "userList");
 		assertNotNull("UserList is null", userList);
 		assertTrue("UserList Name not as expected", userList.getName().equals(userListName));
-	}
+	}*/
 
 	public void testCreateUserListInFormulaEditor() {
 		String userListName = "testList1";

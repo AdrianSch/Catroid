@@ -174,7 +174,7 @@ public class LoopBrickTest extends BaseActivityInstrumentationTestCase<MainMenuA
 				+ projectBrickList.toString(), projectBrickList.get(4) instanceof ChangeBrightnessByNBrick);
 	}
 
-	public void testNestedForeverBricks() {
+	/*public void testNestedForeverBricks() {
 		ArrayList<Integer> yPosition;
 		ArrayList<Brick> projectBrickList = project.getSpriteList().get(0).getScript(0).getBrickList();
 		int addedYPosition;
@@ -254,7 +254,7 @@ public class LoopBrickTest extends BaseActivityInstrumentationTestCase<MainMenuA
 		checkIfForeverLoopsAreCorrectlyPlaced(0);
 		checkIfForeverLoopsAreCorrectlyPlaced(1);
 		checkIfForeverLoopsAreCorrectlyPlaced(3);
-	}
+	}*/
 
 	public void testCopyForeverBrickActionMode() {
 		deleteAllBricks();
@@ -357,7 +357,7 @@ public class LoopBrickTest extends BaseActivityInstrumentationTestCase<MainMenuA
 		assertTrue("CheckBox is not checked but should be.", secondLoopEndBrickCheckBox.isChecked());
 	}
 
-	public void testSelectionActionMode() {
+	/*public void testSelectionActionMode() {
 		UiTestUtils.openActionMode(solo, solo.getString(R.string.copy), R.id.copy, getActivity());
 		UiTestUtils.clickOnCheckBox(solo, 1);
 
@@ -381,7 +381,7 @@ public class LoopBrickTest extends BaseActivityInstrumentationTestCase<MainMenuA
 		assertTrue("CheckBox is not checked but should be.",
 				repeatBrickCheckbox.isChecked() && loopEndBrickCheckbox.isChecked());
 		assertFalse("CheckBox is checked but shouldn't be.", changeYByNBrickCheckbox.isChecked());
-	}
+	}*/
 
 	private void createProject() {
 		LoopEndBrick endBrick;

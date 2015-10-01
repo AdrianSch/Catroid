@@ -63,7 +63,7 @@ public class ReplaceItemInUserListTest extends BaseActivityInstrumentationTestCa
 		UiTestUtils.getIntoScriptActivityFromMainMenu(solo);
 	}
 
-	public void testCreateNewUserListAndDeletion() {
+	/*public void testCreateNewUserListAndDeletion() {
 		String userListName = "testList1";
 		String secondUserListName = "testList2";
 
@@ -138,7 +138,7 @@ public class ReplaceItemInUserListTest extends BaseActivityInstrumentationTestCa
 		userList = (UserList) Reflection.getPrivateField(UserListBrick.class, replaceItemInUserListBrick, "userList");
 		assertNotNull("UserList is null", userList);
 		assertTrue("UserList Name not as expected", userList.getName().equals(userListName));
-	}
+	}*/
 
 	public void testCreateUserListInFormulaEditor() {
 		String userListName = "testList1";
