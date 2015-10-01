@@ -89,7 +89,7 @@ public final class BrickValues {
 	//Constants Arduino
 	public static final int ARDUINO_PWM_INITIAL_PIN_VALUE = 255;
 	public static final int ARDUINO_PWM_INITIAL_PIN_NUMBER = 3;
-	public static final String ARDUINO_DIGITAL_INITIAL_PIN_VALUE = "TRUE";
+	public static final int ARDUINO_DIGITAL_INITIAL_PIN_VALUE = 1;
 	public static final int ARDUINO_DIGITAL_INITIAL_PIN_NUMBER = 13;
 
 	// Suppress default constructor for noninstantiability
